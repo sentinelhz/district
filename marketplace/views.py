@@ -22,9 +22,9 @@ def about_us(request):
     return render(request, "about.html")
 
 def contact(request):
-    return render(request, "ecom/contact_us.html")
+    return render(request, "contact.html")
 def team(request):
-    return render(request, "ecom/team.html")
+    return render(request, "team.html")
 
 
 def cart(request):
