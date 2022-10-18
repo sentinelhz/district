@@ -16,10 +16,10 @@ def index(request):
         'categories': Category.objects.all()[:6],
         'latest_products': Product.objects.all()[:6]
     }
-    return render(request, "index.html", context)
+    return render(request, "shop.html", context)
 
 def about_us(request):
-    return render(request, "../templates/ecom/about_us.html")
+    return render(request, "about.html")
 
 def contact(request):
     return render(request, "../templates/ecom/contact_us.html")
