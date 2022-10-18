@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dis',
-        'USER': 'admin4',
-        'PASSWORD': 'admin1234',
+        'USER': 'admin1',
+        'PASSWORD': 'admin24',
         'HOST': 'localhost',
         'PORT' : '5432',
     }
@@ -140,7 +140,7 @@ REST_FRAMEWORK = {
         "rest_framework.renderers.BrowsableAPIRenderer",
     ),
     # "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
-    "EXCEPTION_HANDLER": "core.api.custom_exception.custom_exception_handler",
+    "EXCEPTION_HANDLER": "account.api.custom_exception.custom_exception_handler",
 }
 
 SIMPLE_JWT = {
