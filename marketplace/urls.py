@@ -8,6 +8,7 @@ app_name = "marketplace"
 urlpatterns = [
     path('', index, name='index'),
     path('about_us', about_us, name="about_us"),
+    path('cart', cart, name="cart"),
     path('contact', contact, name="contact"),
     path('team',team, name="team"),
     path('order', OrderListView.as_view(), name='albums'),
