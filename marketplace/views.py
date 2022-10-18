@@ -22,9 +22,16 @@ def about_us(request):
     return render(request, "about.html")
 
 def contact(request):
-    return render(request, "../templates/ecom/contact_us.html")
-def shopping_tips(request):
-    return render(request, "../templates/ecom/shopping_tips.html")
+    return render(request, "ecom/contact_us.html")
+def team(request):
+    return render(request, "ecom/team.html")
+
+
+def cart(request):
+    return(request, "cart.html")
+
+def admin(request):
+    return render(request, "admin/index.html")
 
 
 class ProductUploadView(CreateView):
